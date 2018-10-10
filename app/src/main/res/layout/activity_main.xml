@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/tebak"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:onClick="bt_tebak"
+            android:src="@drawable/tebak" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/jeruk"
+                android:layout_width="172dp"
+                android:layout_height="179dp"
+                android:layout_weight="1"
+                android:onClick="bt_jeruk"
+                android:src="@drawable/jeruk" />
+
+            <ImageView
+                android:id="@+id/nanas"
+                android:layout_width="161dp"
+                android:layout_height="179dp"
+                android:layout_weight="1"
+                android:onClick="bt_nanas"
+                android:src="@drawable/nanas" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteY="602dp">
+
+            <ImageView
+                android:id="@+id/apel"
+                android:layout_width="306dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="bt_apel"
+                android:src="@drawable/apel" />
+
+            <ImageView
+                android:id="@+id/anggur"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="bt_anggur"
+                android:src="@drawable/anggur" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
